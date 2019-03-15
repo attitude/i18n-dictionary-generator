@@ -1,0 +1,26 @@
+{
+  "name": "i18n-dictionary-generator",
+  "version": "1.0.0",
+  "description": "Generates JSON/JS dictionary from TSV file.",
+  "bin": {
+    "i18n-dictionary-generator": "run.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/attitude/i18n-dictionary-generator.git"
+  },
+  "keywords": [
+    "i18n",
+    "generator",
+    "react-native",
+    "javascript",
+    "json",
+    "tsv"
+  ],
+  "author": "Martin Adamko <martinadamko.sk@gmail.com> (https://twitter.com/martin_adamko/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/attitude/i18n-dictionary-generator/issues"
+  },
+  "homepage": "https://github.com/attitude/i18n-dictionary-generator#readme"
+}
