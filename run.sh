@@ -148,7 +148,8 @@ if ($sortKeys) {
   }
 }
 
-$content = sprintf(str_replace('{}', "%s", $template), json_encode($dictionary, JSON_PRETTY_PRINT));
+$content = sprintf(str_replace('{}', "%s", $template), json_encode($dictionary, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+
 
 if (file_put_contents($outputFile, $content)) {
   printLine("SUCCESS: Dictionary written to ${outputFile}");
