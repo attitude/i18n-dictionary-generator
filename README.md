@@ -27,7 +27,7 @@ Shows usage.
 Path to source file. Should be TSV, tab separated values text file.
 
 ##### -o &lt;FILEPATH&gt;<br>-outputFile &lt;FILEPATH&gt;
-Path to the output file. Expecting a `.js` file extension.
+Path to the output file. Expecting a `.js` file extension. A `.json` file is also generated to be able to compare semantic version.
 
 ##### -t &lt;FILEPATH&gt;<br>-templateFile &lt;FILEPATH&gt;
 Path to a template file to use when generating the output file. Use `%s` or `{}` placeholder to define place of insertion.
@@ -41,4 +41,4 @@ TSV stands for TAB separated values. See [strings.tsv](./strings.tsv) file for e
 
 ## Template file
 
-Use `%s` or `{}` placelhoder to specify where to place resulting JSON. If no template file is defined, default [template](./template.js) is used.
+Use `{/* dictionary */}` placelhoder to specify where to place resulting JSON and `'/* version */'` where to place resulting sem-version code. If no template file is defined, default [template](./template.js) is used.

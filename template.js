@@ -1,3 +1,5 @@
 // @flow
 
-export const dictionary = {}
+export const version: string = '/* version */'
+
+export const dictionary = {/* dictionary */}
