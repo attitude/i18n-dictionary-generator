@@ -207,7 +207,13 @@ foreach ($rows as $row) {
   $key = implode(".", array_slice($row, 0, $expectedHeadersCount));
 
   foreach ($languages as $langColumn => $langKey) {
-    $dictionary[$langKey][$key] = array_slice($row, $expectedHeadersCount, $languagesCount)[$langColumn];
+    $dictionary[$langKey][$key] = strtr(
+      array_slice($row, $expectedHeadersCount, $languagesCount)[$langColumn],
+      [
+        '\t' => "\t",
+        '\n' => "\n",
+      ]
+    );
   }
 }
 
