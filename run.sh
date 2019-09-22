@@ -297,6 +297,8 @@ if (file_exists($previousJsonFile)) {
   $newVersion = bumpVersion($versionInfo, 0, 0, 1);
 }
 
+printLine("New version: ${newVersion}");
+
 $newJsonFile = stripExtension($outputFile).'.v'.$newVersion.'.json';
 
 putJsonContent($newJsonFile, $dictionary);
